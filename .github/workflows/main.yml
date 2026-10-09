@@ -1,0 +1,21 @@
+name: FTP Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy over FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: a2f72.netcup.net
+          username: ${{ secrets.ftp_snaps }}
+          password: ${{ secrets.ftp_snaps_pwd }}
