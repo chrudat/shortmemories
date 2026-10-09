@@ -1,1 +1,1 @@
-<img src="kidscam.jpg" width="350">
+<img src="kidscam.jpg" width="250">
