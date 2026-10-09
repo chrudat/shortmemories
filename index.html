@@ -2,10 +2,12 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-
   <title>Dein Foto. Dein Moment.</title>
+  <meta name="description"
+        content="Kleine Sofortbilder für Veranstaltungen.
+        Klick. Druck. Fertig. Nicht online. Nicht irgendwo. Einfach deins.">
 
   <style>
     * {
@@ -14,188 +16,114 @@
 
     body {
       margin: 0;
+      padding: 24px 16px;
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 24px;
-      background: #f5f5f5;
-      color: #111;
+      background: #f4f4f4;
+      color: #171717;
       font-family: Arial, Helvetica, sans-serif;
     }
 
     .card {
       width: 100%;
-      max-width: 390px;
-      padding: 32px 24px;
+      max-width: 420px;
+      padding: 36px 24px;
+      text-align: center;
       background: #fff;
       border: 1px solid #e5e5e5;
       border-radius: 18px;
-      text-align: center;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
     }
 
-    .illustration {
-      display: block;
-      width: 100%;
-      max-width: 230px;
-      height: auto;
-      margin: 0 auto 24px;
+    .camera {
+      font-size: 42px;
+      margin-bottom: 22px;
     }
 
     h1 {
-      margin: 0 0 12px;
-      font-size: 27px;
-      line-height: 1.2;
-      letter-spacing: -0.8px;
+      margin: 0;
+      font-size: clamp(27px, 7vw, 36px);
+      line-height: 1.15;
+      letter-spacing: -1px;
     }
 
-    .slogan {
-      margin: 0 0 18px;
-      font-size: 15px;
+    .subtitle {
+      margin: 20px 0 28px;
+      font-size: 17px;
       font-weight: bold;
-      letter-spacing: 2px;
+      letter-spacing: 1.5px;
+      line-height: 1.8;
     }
 
     .privacy {
-      margin: 0 0 14px;
+      margin: 0 auto 30px;
+      max-width: 290px;
       font-size: 15px;
-      line-height: 1.6;
+      line-height: 1.7;
+      color: #444;
     }
 
-    .description {
-      margin: 0 0 26px;
-      color: #555;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    .contact {
-      display: flex;
-      flex-direction: column;
+    .contacts {
+      display: grid;
       gap: 12px;
     }
 
-    .contact a {
+    .contact {
       display: block;
-      padding: 13px 16px;
-      border: 1px solid #111;
+      padding: 14px 16px;
+      border: 1px solid #222;
       border-radius: 9px;
-      color: #111;
+      color: #171717;
       text-decoration: none;
-      font-size: 15px;
-      transition: background 0.2s, color 0.2s;
+      font-size: 16px;
+      overflow-wrap: anywhere;
     }
 
-    .contact a:hover {
-      background: #111;
+    .contact:hover {
+      background: #171717;
       color: #fff;
     }
 
-    footer {
-      margin-top: 26px;
-      color: #888;
-      font-size: 11px;
+    .footer {
+      margin-top: 28px;
+      font-size: 12px;
+      color: #777;
     }
   </style>
 </head>
 
 <body>
   <main class="card">
-
-    <!-- Kleine Schwarz-Weiß-Illustration -->
-    <svg
-      class="illustration"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 280 170"
-      role="img"
-      aria-labelledby="illustration-title"
-    >
-      <title id="illustration-title">
-        Sofortbildkamera mit frisch gedrucktem Foto und zwei lachenden Menschen
-      </title>
-
-      <g
-        fill="none"
-        stroke="currentColor"
-        stroke-width="3.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <!-- Zwei fröhliche Menschen -->
-        <circle cx="199" cy="48" r="17"/>
-        <path d="M191 51 Q199 60 207 51"/>
-        <circle cx="194" cy="44" r="1" fill="currentColor"/>
-        <circle cx="204" cy="44" r="1" fill="currentColor"/>
-        <path d="M180 86 Q181 69 199 68 Q217 69 219 86"/>
-
-        <circle cx="244" cy="61" r="14"/>
-        <path d="M237 64 Q244 72 251 64"/>
-        <circle cx="240" cy="57" r="1" fill="currentColor"/>
-        <circle cx="248" cy="57" r="1" fill="currentColor"/>
-        <path d="M230 93 Q231 79 244 78 Q257 79 258 93"/>
-
-        <!-- Kleine Bewegungslinien für Freude -->
-        <path d="M225 27 L231 21"/>
-        <path d="M237 22 L239 14"/>
-
-        <!-- Kamera -->
-        <path d="M22 75 L36 75 L44 63 L78 63 L86 75 L104 75
-                 Q111 75 111 83 L111 119 Q111 126 104 126 L22 126
-                 Q15 126 15 119 L15 83 Q15 75 22 75 Z"/>
-
-        <!-- Objektiv -->
-        <circle cx="63" cy="98" r="19"/>
-        <circle cx="63" cy="98" r="11"/>
-
-        <!-- Sucher und Blitz -->
-        <path d="M29 75 L29 68 L43 68"/>
-        <rect x="82" y="82" width="13" height="7" rx="2"/>
-
-        <!-- Auslöser -->
-        <path d="M48 63 L48 57 L60 57 L60 63"/>
-
-        <!-- Ausgedrucktes Bild -->
-        <path d="M123 67 L151 67 L151 116 L116 116 L116 79"/>
-        <path d="M123 67 L123 79 L116 79"/>
-        <path d="M123 79 L151 79"/>
-        <path d="M124 91 L143 91"/>
-        <path d="M124 98 L143 98"/>
-        <path d="M124 105 L137 105"/>
-
-        <!-- Bewegung des Ausdrucks -->
-        <path d="M113 57 Q126 48 141 53"/>
-        <path d="M134 46 L142 53 L133 58"/>
-
-        <!-- Kleine Bodenlinie -->
-        <path d="M12 137 L263 137" stroke-width="2"/>
-      </g>
-    </svg>
+    <div class="camera" aria-hidden="true">📸</div>
 
     <h1>DEIN FOTO.<br>DEIN MOMENT.</h1>
 
-    <p class="slogan">KLICK. DRUCK. FERTIG.</p>
-
-    <p class="privacy">
-      Nicht online. Nicht irgendwo.<br>
-      Einfach deins.
-    </p>
-
-    <p class="description">
-      Kleine Sofortbilder für besondere Momente –
-      direkt zum Mitnehmen.
-    </p>
-
-    <div class="contact">
-      <!-- Hier deine eigenen Kontaktdaten eintragen -->
-      <a href="tel:+491775905509">Anrufen</a>
-      <a href="mailto:info@shortmemories.de">E-Mail schreiben</a>
+    <div class="subtitle">
+      KLICK. DRUCK. FERTIG.
     </div>
 
-    <footer>
-      Ein Moment. Ein Ausdruck. Nur für dich.
-    </footer>
+    <p class="privacy">
+      Kleine Sofortbilder für besondere Momente,
+      direkt zum Mitnehmen.<br><br>
+      <strong>Nicht online. Nicht irgendwo.<br>Einfach deins.</strong>
+    </p>
 
+    <div class="contacts">
+      <a class="contact" href="tel:+491701234567">
+        Telefon: 0177 5905509
+      </a>
+
+      <a class="contact"
+         href="mailto:info@shortmemories.de">
+        E-Mail: info@shortmemories.de
+      </a>
+    </div>
+
+    <div class="footer">
+      Persönlich. Unkompliziert. Direkt vor Ort.
+    </div>
   </main>
 </body>
 </html>
