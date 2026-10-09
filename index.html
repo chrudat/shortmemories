@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Dein Foto. Dein Moment.</title>
+  <meta name="description"
+        content="Kleine Sofortbilder für Veranstaltungen.
+        Klick. Druck. Fertig. Nicht online. Nicht irgendwo. Einfach deins.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f4f4f4;
+      color: #171717;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      padding: 36px 24px;
+      text-align: center;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    .camera {
+      font-size: 42px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(27px, 7vw, 36px);
+      line-height: 1.15;
+      letter-spacing: -1px;
+    }
+
+    .subtitle {
+      margin: 20px 0 28px;
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      line-height: 1.8;
+    }
+
+    .privacy {
+      margin: 0 auto 30px;
+      max-width: 290px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .contacts {
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact {
+      display: block;
+      padding: 14px 16px;
+      border: 1px solid #222;
+      border-radius: 9px;
+      color: #171717;
+      text-decoration: none;
+      font-size: 16px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact:hover {
+      background: #171717;
+      color: #fff;
+    }
+
+    .footer {
+      margin-top: 28px;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <div class="camera" aria-hidden="true">📸</div>
+
+    <h1>DEIN FOTO.<br>DEIN MOMENT.</h1>
+
+    <div class="subtitle">
+      KLICK. DRUCK. FERTIG.
+    </div>
+
+    <p class="privacy">
+      Kleine Sofortbilder für besondere Momente,
+      direkt zum Mitnehmen.<br><br>
+      <strong>Nicht online. Nicht irgendwo.
+      Einfach deins.</strong>
+    </p>
+
+    <div class="contacts">
+      <a class="contact" href="tel:+491701234567">
+        Telefon: 0177 5905509
+      </a>
+
+      <a class="contact"
+         href="mailto:info@shortmemories.de">
+        E-Mail-Kontakt
+      </a>
+    </div>
+
+    <div class="footer">
+      Persönlich. Unkompliziert. Direkt vor Ort.
+    </div>
+  </main>
+</body>
+</html>
