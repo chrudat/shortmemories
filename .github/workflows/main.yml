@@ -17,5 +17,5 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: a2f72.netcup.net
-          username: ${{ secrets.ftp_snaps }}
-          password: ${{ secrets.ftp_snaps_pwd }}
+          username: ${{ secrets.ftp_rerora_snaps }}
+          password: ${{ secrets.ftp_rerora_snaps_pwd }}
